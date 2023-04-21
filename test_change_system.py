@@ -3,8 +3,7 @@
 #################
 
 import unittest
-from decimal_base import decimal_to_binary, decimal_to_octal, decimal_to_hexadecimal
-from binary_base import *
+from change_base import *
 
 #################
 #   Testing     #
@@ -41,6 +40,10 @@ class Test_base_Change(unittest.TestCase):
         self.assertEqual(output, '28')
         output = decimal_to_hexadecimal(737250)
         self.assertEqual(output, 'B3FE2')
+
+    def test_binary_to_decimal(self):
+        output = binary_to_decimal(1000)
+        self.assertEqual(output, 8)
 
 
 if __name__ == '__main__':
