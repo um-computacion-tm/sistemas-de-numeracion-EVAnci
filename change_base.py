@@ -9,7 +9,7 @@
 # 2 parameters. So the real convertion functions call this wrapper function 
 # specifying the correct base, and giving the number recieved.
 
-# How this wrapper function works?
+# How decimal wrapper function works?
 # It recieves 2 parameters, the number to convert and the base.
 # Then it goes to a while loop, it adds at the firts the remainder in a variable 
 # called convertion till the number divided is lower than the base. There is a
